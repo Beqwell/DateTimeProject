@@ -26,7 +26,7 @@
 1. Використання фабричного методу:
 
 Створено клас `TimeFactory` для створення об'єктів `Hour`, `Minute`, `Second`.
-
+``` 
 class TimeFactory {
 public:
     static Hour createHour(int value) {
@@ -39,11 +39,11 @@ public:
         return Second(value);
     }
 };
-
+``` 
 2. Валідація через винятки
 
 Методи валідації у класах `Hour`, `Minute`, `Second` були змінені для використання винятків.
-
+``` 
 class Hour : public TimeUnit {
 public:
     Hour(int h) : TimeUnit(h) {}
@@ -67,13 +67,13 @@ public:
         if (value < 0 || value >= 60) throw std::invalid_argument("Invalid second");
     }
 };
-
+``` 
 
 3. Виділення валідації у окремий клас:
 
 Створено клас `DateValidator` для валідації дат.
 
-
+``` 
 class DateValidator {
 public:
     static bool isLeapYear(int year) {
@@ -93,13 +93,13 @@ public:
         return (day <= maxDays);
     }
 };
-
+``` 
 
 4. Оновлення класу `Date`:
 
 Клас `Date` тепер використовує `DateValidator` для перевірки валідності дат.
 
-
+``` 
 struct Date {
     int year;
     int month;
@@ -111,7 +111,7 @@ struct Date {
         return DateValidator::isValidDate(year, month, day);
     }
 };
-
+``` 
 
  Написання тестів
 
@@ -134,3 +134,4 @@ struct Date {
 - Валідація :Валідація значень тепер здійснюється через винятки, що підвищило надійність програми.
 - Фабричний метод: Використання фабричного методу для створення об'єктів підвищило гнучкість та розширюваність коду.
 - Тестування: Додано unit tests для перевірки коректності функціонування програми.
+- 
