@@ -1,5 +1,5 @@
 # DateTimeProject
-Посилання на менулий код - https://github.com/tyure/lab_1/blob/main/laber1.cpp
+Посилання на менулий код - **https://github.com/tyure/lab_1/blob/main/laber1.cpp**
 
 Виконані завдання
 
