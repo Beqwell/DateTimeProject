@@ -1,0 +1,15 @@
+digraph "Time::isValid"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Time::isValid",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Validate the time."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Hour::validate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_hour.html#af2fc235eca8dea5adf94f2eabe4620f6",tooltip="Validate the hour value."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Minute::validate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_minute.html#ab84829523f0580b6ca51aef71fe2ea62",tooltip="Validate the minute value."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Second::validate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_second.html#a63a94f1f44f33e01e94422f2987b9b26",tooltip="Validate the second value."];
+}

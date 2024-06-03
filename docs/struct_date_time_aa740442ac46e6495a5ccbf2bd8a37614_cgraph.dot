@@ -1,0 +1,16 @@
+digraph "DateTime::addTimeDifference"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="DateTime::addTimeDifference",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add time difference to the current date and time."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="DateValidator::isLeapYear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_date_validator.html#a387fabe601e1d421996848e8012ed6ee",tooltip="Check if a year is a leap year."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Date::isValid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$struct_date.html#a7a39fcfa60c9ff0f73d8c8094ffd1f78",tooltip="Validate the date."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="DateValidator::isValidDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_date_validator.html#a56683b27e1b8462d1434691293d7226c",tooltip="Validate a date."];
+  Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
+}
